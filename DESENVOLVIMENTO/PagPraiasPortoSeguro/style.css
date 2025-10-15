@@ -1,0 +1,102 @@
+:root{
+    --cor-primaria: #0077b6;
+    --cor-secundaria: #90e0ef;
+    --cor-fundo: #f1f1f1;
+    --cor-texto: #333333;
+    --cor-branca: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    text-align: center;
+}
+
+.cabecalho{
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    text-align: center;
+}
+
+menu a{
+    display: flex;
+}
+
+.menu  ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li:hover{
+    background: linear-gradient(135deg, #27cb11 0%, #2575fc 100%);
+    border-radius: 5px;
+}
+
+.menu a{
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.praias, .sobre , .contato{
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+    margin-top: 20px;
+}
+
+.praia{
+    font-size: 1.5em;
+    height: 500px;
+    background-color: var(--cor-branca);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 400px;
+    padding: 15px;
+}
+
+.praia img{
+    width: 100%;
+    border-radius: 8px;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.praia img:hover{
+    opacity: 0.85;
+    transform: scale(1.1); rotate: (5deg);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button:hover{
+    background: linear-gradient(135deg, #27cb11 0%, #2575fc 100%);
+}
